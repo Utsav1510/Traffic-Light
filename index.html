@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 400px;
+  text-align: center;
+  
+
+}
+h2,h1{
+    text-align: center;
+}
+table td {
+  border: 1px solid black;
+  padding:6px;
+  font-size: 20px;
+}
+    div{
+        display: flex;
+    }
+    #d1{
+        height: 200px;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+    }
+    #d2{
+        
+        flex-direction: row;
+        max-height: 400px;
+        align-items: center;
+      
+        align-items: center;
+       flex-wrap: wrap;
+
+    }
+
+    .radio {
+        border:  3px solid white;
+    width: 100%;
+    height: 9em;
+  
+    }
+    
+    .red{
+        accent-color:red 
+    }
+    .green{
+        accent-color: green;
+    }
+    .yellow{
+        accent-color: yellow;
+    }
+    /* #r4{
+        accent-color:black;
+    } */
+
+
+    .click_for {
+        border: 0px !important ;
+    width: 100% !important;
+    height: 2em !important;
+   
+    
+    }
+    span{
+        /* margin-left:500px */
+    }
+    #r7{
+        accent-color: black;
+    }
+
+</style>
+<script src="script.js"></script>
+</head>
+<body>
+
+<h1>TRAFFIC LIGHT🚦 </h1>
+<div id="d1" style="border:black; border-width:5px; border-style:solid;  flex-direction: row;
+">
+  
+  <input type="radio" id="r1" class="radio red" name="traffic1" value="red">
+  
+  <input type="radio" id ="r2" class="radio green" name="traffic2" value="green">
+
+  <input type="radio" id ="r3" class="radio yellow" name="traffic3" value="yellow">
+ 
+
+  <br>  
+</div>
+ 
+
+<!-- <h2>Test buttons</h2> -->
+<!-- <div  id ="d2" style="border:black; border-width:5px; border-style:solid; -->
+<!-- ;">
+     
+      
+    <span>
+       <span> CLICK FOR Green</span>
+    
+    <span> CLICK FOR Yellow</span>
+     
+    <br>  
+    <span> All </span>
+    
+    <br>  
+    <span> Alternate</span>
+   
+    <br>  
+    <span> Stop Alternate</span>
+     
+    <br>
+    <span> Deslect All</span>
+   
+    
+      <br>   -->
+    <!-- </div> -->
+
+    <h2><u>FUNCTIONS</u></h2>
+    <table>
+        <tr>
+          <td>Click for Red</td>
+          
+         
+         <td><input type="radio" id="r4" class="click_for red" onclick="myFunction(event)" name="select" value="r1"></td>
+        
+         
+          
+        </tr>
+        <tr>
+            <td>Click for Green</td>
+    <td>  <input type="radio" id ="r5" class="click_for green " onclick="myFunction(event)" name="select" value="r2"></td>
+        </tr>
+        <tr>
+            <td>Click for Yellow</td>
+            <td><input type="radio" id ="r6" class="click_for yellow" onclick="myFunction(event)" name="select" value="r3"></td>
+        </tr>
+        <tr>
+            <td>All</td>
+            <td><input type="radio" id ="r7" class="click_for" onclick="myFunction(event)" name="select" value="all"></td>
+        </tr>
+        <tr>
+            <td>Alternative</td>
+            <td> <input type="radio" id ="r7" class="click_for" onclick="myFunction(event)" name="select" value="alt"></td>
+        </tr>
+        <tr>
+            <td>Stop Cycle</td>
+            <td><button id="st" onclick="stop(event)">Stop</button></td>
+        </tr>
+        <tr>
+            <td>Deselect All</td>
+            <td> <button id="s1" onclick="clearall(event)">Clear all</button></td>
+        </tr>
+
+      </table>
+      
+
+</body>
+</html>
